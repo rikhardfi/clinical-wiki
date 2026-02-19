@@ -1,0 +1,115 @@
+{
+  "sections": [
+    {
+      "id": "esitiedot",
+      "title": "1. History (Anamnesis)",
+      "type": "checklist",
+      "items": [
+        { "id": "a1", "text": "Family history: asthma, allergy, COPD in family" },
+        { "id": "a2", "text": "Duration and nature of symptoms: dyspnea, wheezing, chest tightness, cough" },
+        { "id": "a3", "text": "Timing: at rest / during exercise / post-exercise / at night" },
+        { "id": "a4", "text": "Triggers: cold, dust, animals, odors, exercise, infections" },
+        { "id": "a5", "text": "Allergies: pollen, animal, other — physician-confirmed?" },
+        { "id": "a6", "text": "Smoking / snus / e-cigarettes" },
+        { "id": "a7", "text": "Work environment: dust, gases, fumes" },
+        { "id": "a8", "text": "Comorbidities: reflux, sleep apnea, depression, arrhythmia" },
+        { "id": "a9", "text": "Medications: current asthma drugs (maintenance + PRN), name them" },
+        { "id": "a10", "text": "Asthma control: weekly symptoms, night symptoms, reliever use, functional capacity" }
+      ]
+    },
+    {
+      "id": "tutkimukset",
+      "title": "2. Investigations",
+      "type": "checklist",
+      "items": [
+        { "id": "b1", "text": "Spirometry + bronchodilator test (FEV₁/FVC, ≥12% and 200 mL improvement)" },
+        { "id": "b2", "text": "PEF monitoring 2 weeks (≥20% and 60 L/min diurnal variation OR ≥15% bronchodilator response)" },
+        { "id": "b3", "text": "Consider bronchial provocation: methacholine (PD₂₀FEV₁ ≤0.6 mg), mannitol, exercise test" },
+        { "id": "b4", "text": "FeNO (inflammatory marker)" },
+        { "id": "b5", "text": "Allergy screening / prick tests" },
+        { "id": "b6", "text": "Chest X-ray (if indicated)" },
+        { "id": "b7", "text": "Blood tests: CBC, CRP, total IgE, specific IgE (if indicated)" }
+      ]
+    },
+    {
+      "id": "hoitoportaat",
+      "title": "3. Treatment Steps — Finnish Guidelines / GINA",
+      "type": "table",
+      "tables": [
+        {
+          "caption": "Treatment Steps",
+          "headers": ["Step", "Treatment", "ICS dose"],
+          "rows": [
+            ["1", "SABA as needed OR ICS-formoterol as needed", "—"],
+            ["2", "Low-dose ICS ± LABA", "Budesonide 200–400 µg/day"],
+            ["3", "Medium-dose ICS + LABA OR + LTRA/LAMA", "Budesonide >400–800 µg/day"],
+            ["4", "High-dose ICS + LABA ± LTRA/LAMA, biologics", "Budesonide >800 µg/day"],
+            ["5", "Specialist-led: biologics by phenotype", "—"]
+          ]
+        },
+        {
+          "caption": "ICS Dosing Table (≥12 years)",
+          "headers": ["Drug", "Low", "Medium", "High"],
+          "rows": [
+            ["Beclomethasone (Innovair®)", "100–200 µg/day", ">200–400", ">400"],
+            ["Budesonide (Pulmicort®)", "200–400 µg/day", ">400–800", ">800"],
+            ["Fluticasone (Flixotide®)", "100–250 µg/day", ">250–500", ">500"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hallinta",
+      "title": "3b. Asthma Control Assessment",
+      "type": "checklist",
+      "items": [
+        { "id": "c1", "text": "Symptoms ≤2×/week → well controlled" },
+        { "id": "c2", "text": "No night symptoms" },
+        { "id": "c3", "text": "No activity limitation" },
+        { "id": "c4", "text": "Reliever ≤2×/week" },
+        { "id": "c5", "text": "Well controlled 6–12 months → consider step-down" }
+      ]
+    },
+    {
+      "id": "urheilija",
+      "title": "4. Athlete Asthma",
+      "type": "checklist",
+      "items": [
+        { "id": "d1", "text": "Exercise symptoms: cough, dyspnea, wheezing during or after exercise" },
+        { "id": "d2", "text": "Cold air exposure: symptoms when training in cold" },
+        { "id": "d3", "text": "Training volume: hours/week, sports, endurance/strength split %" },
+        { "id": "d4", "text": "Respiratory infections and sick days last season" },
+        { "id": "d5", "text": "EILO screening: laryngeal symptoms at rest/exercise/after (Newcastle questionnaire)" },
+        { "id": "d6", "text": "Breathing devices: WellO₂, Sarvikuono, Airtrim, Lungplus" },
+        { "id": "d7", "text": "Consider EVH test or mannitol test (eucapnic voluntary hyperventilation)" },
+        { "id": "d8", "text": "Exercise challenge: treadmill or field test with symptom assessment" },
+        { "id": "d9", "text": "Reflux symptoms: burning, belching, acid taste (common in athlete cough)" },
+        { "id": "d10", "text": "Return-to-sport: symptom-free, medication optimized, PEF stable" }
+      ]
+    },
+    {
+      "id": "paheneminen",
+      "title": "5. Exacerbation Management",
+      "type": "checklist",
+      "items": [
+        { "id": "e1", "text": "Prednisolone 20–40 mg/day for 5–7 days" },
+        { "id": "e2", "text": "Increase reliever medication" },
+        { "id": "e3", "text": "Check inhaler technique" },
+        { "id": "e4", "text": "Assess adherence" },
+        { "id": "e5", "text": "Follow-up visit in 2–4 weeks" }
+      ]
+    },
+    {
+      "id": "potilasohjaus",
+      "title": "6. Patient Education",
+      "type": "checklist",
+      "items": [
+        { "id": "f1", "text": "Inhaler technique taught and checked" },
+        { "id": "f2", "text": "Self-monitoring instructions (PEF, symptom diary)" },
+        { "id": "f3", "text": "Exacerbation action plan (when to seek care)" },
+        { "id": "f4", "text": "Medication reimbursement (Kela B-statement for asthma drugs)" },
+        { "id": "f5", "text": "Follow-up appointment booked" }
+      ]
+    }
+  ]
+}

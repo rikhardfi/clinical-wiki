@@ -1,0 +1,115 @@
+{
+  "sections": [
+    {
+      "id": "esitiedot",
+      "title": "1. Esitiedot (Anamneesi)",
+      "type": "checklist",
+      "items": [
+        { "id": "a1", "text": "Sukuhistoria: astma, allergia, COPD perheessä" },
+        { "id": "a2", "text": "Oireiden kesto ja luonne: hengenahdistus, vinkuna, rintakehän kireys, yskä" },
+        { "id": "a3", "text": "Oireiden ajoitus: levossa / rasituksessa / rasituksen jälkeen / yöllä" },
+        { "id": "a4", "text": "Oireiden laukaisijat: kylmä, pöly, eläimet, hajut, rasitus, infektiot" },
+        { "id": "a5", "text": "Allergiat: siitepöly, eläin, muu — lääkärin toteama?" },
+        { "id": "a6", "text": "Tupakointi / nuuska / sähkötupakka" },
+        { "id": "a7", "text": "Työympäristö: pöly, kaasut, savu" },
+        { "id": "a8", "text": "Liitännäissairaudet: refluksi, uniapnea, masennus, rytmihäiriö" },
+        { "id": "a9", "text": "Lääkitys: nykyiset astmalääkkeet (jatkuva + tarvittaessa), nimetään" },
+        { "id": "a10", "text": "Astman hallinta: oireet viikossa, yöoireet, avaavan lääkkeen käyttö, toimintakyky" }
+      ]
+    },
+    {
+      "id": "tutkimukset",
+      "title": "2. Tutkimukset",
+      "type": "checklist",
+      "items": [
+        { "id": "b1", "text": "Spirometria + bronkodilataatiokoe (FEV₁/FVC, ≥12 % ja 200 ml parannus)" },
+        { "id": "b2", "text": "PEF-seuranta 2 viikkoa (≥20 % ja 60 L/min vuorokausivaihtelu TAI ≥15 % avaava vaste)" },
+        { "id": "b3", "text": "Bronkiaalinen altistuskoe harkinta: metakoliini (PD₂₀FEV₁ ≤0,6 mg), mannitoli, rasituskoe" },
+        { "id": "b4", "text": "FeNO (tulehdusmarkkeri)" },
+        { "id": "b5", "text": "Allergiaseula / prick-testit" },
+        { "id": "b6", "text": "Thorax-rtg (tarvittaessa)" },
+        { "id": "b7", "text": "Verikokeet: PVK, CRP, kokonais-IgE, spesifiset IgE (tarvittaessa)" }
+      ]
+    },
+    {
+      "id": "hoitoportaat",
+      "title": "3. Hoitoportaat — Käypä hoito / GINA",
+      "type": "table",
+      "tables": [
+        {
+          "caption": "Hoitoportaat",
+          "headers": ["Porras", "Hoito", "ICS-annos"],
+          "rows": [
+            ["1", "SABA tarvittaessa TAI ICS-formoteroli tarvittaessa", "—"],
+            ["2", "Pieniannoksinen ICS ± LABA", "Budesonidi 200–400 µg/vrk"],
+            ["3", "Keskiannoksinen ICS + LABA TAI + LTRA/LAMA", "Budesonidi >400–800 µg/vrk"],
+            ["4", "Suuriannoksinen ICS + LABA ± LTRA/LAMA, biologiset", "Budesonidi >800 µg/vrk"],
+            ["5", "Erikoislääkärijohtoinen: biologiset fenotyypin mukaan", "—"]
+          ]
+        },
+        {
+          "caption": "ICS-annostaulukko (≥12 v)",
+          "headers": ["Lääke", "Pieni", "Keski", "Suuri"],
+          "rows": [
+            ["Beklometasoni (Innovair®)", "100–200 µg/vrk", ">200–400", ">400"],
+            ["Budesonidi (Pulmicort®)", "200–400 µg/vrk", ">400–800", ">800"],
+            ["Flutikasoni (Flixotide®)", "100–250 µg/vrk", ">250–500", ">500"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hallinta",
+      "title": "3b. Hoidon hallinta",
+      "type": "checklist",
+      "items": [
+        { "id": "c1", "text": "Oireet ≤2×/viikko → hyvä hallinta" },
+        { "id": "c2", "text": "Ei yöoireita" },
+        { "id": "c3", "text": "Ei toimintakyvyn rajoitusta" },
+        { "id": "c4", "text": "Avaava lääke ≤2×/viikko" },
+        { "id": "c5", "text": "Hyvä hallinta 6–12 kk → hoidon keventäminen" }
+      ]
+    },
+    {
+      "id": "urheilija",
+      "title": "4. Urheilija-astma",
+      "type": "checklist",
+      "items": [
+        { "id": "d1", "text": "Rasitusoireet: yskä, hengenahdistus, vinkuna rasituksessa tai sen jälkeen" },
+        { "id": "d2", "text": "Kylmäilma-altistus: oireet kylmässä harjoitellessa" },
+        { "id": "d3", "text": "Harjoitusmäärä: tuntia/viikko, lajit, teho-/kestävyys-/voimaharjoittelu-%" },
+        { "id": "d4", "text": "Hengitystieinfektiot ja sairaspäivät viime kaudella" },
+        { "id": "d5", "text": "EILO-seulonta: kurkunpään oireet levossa/rasituksessa/jälkeen (Newcastle-kysely)" },
+        { "id": "d6", "text": "Hengityslaitteiden käyttö: WellO₂, Sarvikuono, Airtrim, Lungplus" },
+        { "id": "d7", "text": "EVH-testi tai mannitolitesti harkinta (eukapninen hyperventilaatio)" },
+        { "id": "d8", "text": "Rasitustesti: juoksumatolla tai kenttätesti oirearvio" },
+        { "id": "d9", "text": "Refluksioireet: polttava tunne, röyhtäily, hapan maku (usein liittyy urheilija-yskään)" },
+        { "id": "d10", "text": "Return-to-sport: oireeton, lääkitys optimoitu, PEF vakaa" }
+      ]
+    },
+    {
+      "id": "paheneminen",
+      "title": "5. Pahenemisvaiheen hoito",
+      "type": "checklist",
+      "items": [
+        { "id": "e1", "text": "Prednisoloni 20–40 mg/vrk 5–7 vrk" },
+        { "id": "e2", "text": "Avaava lääke tehostus" },
+        { "id": "e3", "text": "Inhalointitekniikan tarkistus" },
+        { "id": "e4", "text": "Hoitoon sitoutumisen arvio" },
+        { "id": "e5", "text": "Seurantakäynti 2–4 viikon kuluttua" }
+      ]
+    },
+    {
+      "id": "potilasohjaus",
+      "title": "6. Potilasohjaus",
+      "type": "checklist",
+      "items": [
+        { "id": "f1", "text": "Inhalointitekniikka opetettu ja tarkistettu" },
+        { "id": "f2", "text": "Omaseurantaohje (PEF, oirepäiväkirja)" },
+        { "id": "f3", "text": "Pahenemisvaiheohje (milloin hakeutua hoitoon)" },
+        { "id": "f4", "text": "Lääkekorvaukset (Kela B-lausunto astmalääkkeisiin)" },
+        { "id": "f5", "text": "Kontrollikäynti varattu" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "flowchart": {
+    "nodes": [
+      { "id": "start", "text": "Cough ≥8 weeks", "type": "start" },
+      { "id": "red_flags", "text": "Red flags?\n(hemoptysis, weight loss,\nvoice change, dysphagia,\nsmoker >45 y)", "type": "decision" },
+      { "id": "urgent", "text": "Urgent chest X-ray\n+ specialist referral", "type": "result-red" },
+      { "id": "ace", "text": "ACE inhibitor?", "type": "decision" },
+      { "id": "ace_stop", "text": "Switch medication,\nfollow-up 4 wk", "type": "result" },
+      { "id": "xray", "text": "Chest X-ray normal?", "type": "decision" },
+      { "id": "xray_abnormal", "text": "Investigate based\non findings", "type": "result" },
+      { "id": "spiro", "text": "Spirometry +\nbronchodilator test", "type": "decision" },
+      { "id": "obstruction", "text": "Obstruction → Asthma\n(→ Asthma page)", "type": "result" },
+      { "id": "empirical", "text": "Empirical treatment\ntrial (sequential)", "type": "action" },
+      { "id": "step1", "text": "1. Nasal corticosteroid\n2–4 wk", "type": "action" },
+      { "id": "step2", "text": "2. ICS 6–8 wk", "type": "action" },
+      { "id": "step3", "text": "3. PPI 8 wk", "type": "action" },
+      { "id": "specialist", "text": "Specialist:\nHRCT, bronchoscopy,\ncough reflex test,\npH monitoring", "type": "result" }
+    ],
+    "edges": [
+      { "from": "start", "to": "red_flags" },
+      { "from": "red_flags", "to": "urgent", "label": "Yes" },
+      { "from": "red_flags", "to": "ace", "label": "No" },
+      { "from": "ace", "to": "ace_stop", "label": "Yes" },
+      { "from": "ace", "to": "xray", "label": "No" },
+      { "from": "xray", "to": "xray_abnormal", "label": "No" },
+      { "from": "xray", "to": "spiro", "label": "Yes" },
+      { "from": "spiro", "to": "obstruction", "label": "Obstruction" },
+      { "from": "spiro", "to": "empirical", "label": "Normal" },
+      { "from": "empirical", "to": "step1" },
+      { "from": "step1", "to": "step2", "label": "No response" },
+      { "from": "step2", "to": "step3", "label": "No response" },
+      { "from": "step3", "to": "specialist", "label": "No response" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "alkuarvio",
+      "title": "1. Initial Assessment",
+      "type": "checklist",
+      "items": [
+        { "id": "g1", "text": "Cough duration: acute (<3 wk), subacute (3–8 wk), chronic (>8 wk)" },
+        { "id": "g2", "text": "Cough character: dry vs. productive, timing (night/morning/day)" },
+        { "id": "g3", "text": "Red flag check: hemoptysis, weight loss, voice change, dysphagia, smoker >45 y" },
+        { "id": "g4", "text": "Medication list: ACE inhibitor? (most common iatrogenic cause)" },
+        { "id": "g5", "text": "Smoking / exposure" },
+        { "id": "g6", "text": "Environmental exposures: work, home, hobbies" }
+      ]
+    },
+    {
+      "id": "perustutkimukset",
+      "title": "2. Basic Investigations",
+      "type": "checklist",
+      "items": [
+        { "id": "h1", "text": "Chest X-ray" },
+        { "id": "h2", "text": "Spirometry + bronchodilator test" },
+        { "id": "h3", "text": "CBC + CRP (infection, eosinophilia)" },
+        { "id": "h4", "text": "FeNO (eosinophilic inflammation)" }
+      ]
+    },
+    {
+      "id": "empiirinen",
+      "title": "3. Empirical Treatment Trial — ERS 2024",
+      "type": "checklist",
+      "items": [
+        { "id": "i1", "text": "Step 1: Nasal corticosteroid (mometasone / fluticasone furoate) 2–4 weeks → Response: upper airway cough (post-nasal drip)" },
+        { "id": "i2", "text": "Step 2: ICS (budesonide 400–800 µg/day) 6–8 weeks → Response: eosinophilic inflammation / cough-variant asthma" },
+        { "id": "i3", "text": "Step 3: PPI (omeprazole/esomeprazole 20–40 mg ×2) 8 weeks → Response: reflux cough" },
+        { "id": "i4", "text": "Step 4: No response → Specialist referral (pulmonologist / ENT)" }
+      ]
+    },
+    {
+      "id": "erikoislaakari",
+      "title": "4. Specialist Investigations",
+      "type": "checklist",
+      "items": [
+        { "id": "j1", "text": "HRCT thorax" },
+        { "id": "j2", "text": "Bronchoscopy (if indicated)" },
+        { "id": "j3", "text": "Cough reflex test (capsaicin provocation)" },
+        { "id": "j4", "text": "24h pH-impedance monitoring" },
+        { "id": "j5", "text": "Laryngoscopy (EILO, LPR)" }
+      ]
+    }
+  ],
+  "redFlags": [
+    "Hemoptysis (coughing blood)",
+    "Unexplained weight loss >5%",
+    "Hoarseness >3 weeks",
+    "Dysphagia (difficulty swallowing)",
+    "Smoker >45 y + new cough",
+    "Dyspnea at rest"
+  ]
+}
