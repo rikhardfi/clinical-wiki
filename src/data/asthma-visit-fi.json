@@ -1,0 +1,89 @@
+{
+  "visitTypes": {
+    "new": { "label": "Uusi diagnoosi", "headerText": "ASTMA — Uusi diagnoosi" },
+    "followup": { "label": "Seurantakäynti", "headerText": "ASTMA — Seurantakäynti" }
+  },
+  "sections": [
+    {
+      "id": "esitiedot",
+      "title": "Esitiedot",
+      "items": [
+        { "id": "v-a1", "text": "Sukuhistoria: astma/allergia/COPD", "prose": "Sukuhistoriassa astmaa/allergiaa.", "types": ["new"] },
+        { "id": "v-a2", "text": "Oireiden kesto ja luonne", "prose": "Oireina hengenahdistusta/vinkunaa/yskää.", "types": ["new", "followup"] },
+        { "id": "v-a3", "text": "Oireiden ajoitus (lepo/rasitus/yö)", "prose": "Oireita esiintyy levossa/rasituksessa/yöllä.", "types": ["new", "followup"] },
+        { "id": "v-a4", "text": "Laukaisevat tekijät (kylmä, pöly, eläimet, hajut, rasitus, infektiot)", "prose": "Oireita laukaisevat kylmä/pöly/eläimet/hajut/rasitus/infektiot.", "types": ["new"] },
+        { "id": "v-a5", "text": "Allergiat (siitepöly, eläin, muu)", "prose": "Allergiataustassa siitepöly-/eläin-/muu allergia.", "types": ["new"] },
+        { "id": "v-a6", "text": "Tupakointi / nuuska / sähkötupakka", "prose": "Tupakointihistoria selvitetty.", "types": ["new"] },
+        { "id": "v-a7", "text": "Työympäristöaltisteet", "prose": "Työympäristöaltisteet selvitetty (pöly, kaasut, savu).", "types": ["new"] },
+        { "id": "v-a8", "text": "Liitännäissairaudet (refluksi, uniapnea, masennus)", "prose": "Liitännäissairaudet huomioitu.", "types": ["new", "followup"] },
+        { "id": "v-a9", "text": "Nykyinen astmalääkitys", "prose": "Nykyinen astmalääkitys käyty läpi.", "types": ["new", "followup"] },
+        { "id": "v-a10", "text": "Astman hallinta-arvio (oireet, yöoireet, avaava lääke, toimintakyky)", "prose": "Astman hallinta arvioitu (oireet, yöoireet, avaavan lääkkeen tarve, toimintakyky).", "types": ["followup"] }
+      ]
+    },
+    {
+      "id": "tutkimukset",
+      "title": "Tutkimukset",
+      "items": [
+        { "id": "v-b1", "text": "Spirometria + bronkodilataatiokoe", "prose": "Spirometria ja bronkodilataatiokoe tehty.", "types": ["new", "followup"] },
+        { "id": "v-b2", "text": "PEF-seuranta 2 viikkoa", "prose": "PEF-seuranta toteutettu.", "types": ["new", "followup"] },
+        { "id": "v-b3", "text": "Bronkiaalinen altistuskoe (metakoliini/mannitoli/rasitus)", "prose": "Bronkiaalinen altistuskoe tehty.", "types": ["new"] },
+        { "id": "v-b4", "text": "FeNO-mittaus", "prose": "FeNO mitattu.", "types": ["new", "followup"] },
+        { "id": "v-b5", "text": "Allergiaseula / prick-testit", "prose": "Allergiatutkimukset tehty.", "types": ["new"] },
+        { "id": "v-b6", "text": "Thorax-röntgen", "prose": "Thorax-röntgen tehty.", "types": ["new"] },
+        { "id": "v-b7", "text": "Verikokeet (PVK, CRP, IgE)", "prose": "Laboratoriotutkimukset otettu.", "types": ["new"] }
+      ]
+    },
+    {
+      "id": "hallinta",
+      "title": "Hallinnan arvio",
+      "items": [
+        { "id": "v-c1", "text": "Oireet ≤2×/viikko → hyvä hallinta", "prose": "Oireita ≤2 kertaa viikossa, hallinta hyvä.", "types": ["followup"] },
+        { "id": "v-c2", "text": "Ei yöoireita", "prose": "Yöoireita ei esiinny.", "types": ["followup"] },
+        { "id": "v-c3", "text": "Ei toimintakyvyn rajoitusta", "prose": "Toimintakyky normaali.", "types": ["followup"] },
+        { "id": "v-c4", "text": "Avaava lääke ≤2×/viikko", "prose": "Avaavan lääkkeen tarve ≤2 kertaa viikossa.", "types": ["followup"] },
+        { "id": "v-c5", "text": "Hyvä hallinta ≥3 kk → hoidon keventäminen harkitaan", "prose": "Hallinta ollut hyvä, hoidon keventämistä harkitaan.", "types": ["followup"] },
+        { "id": "v-c6", "text": "Huono hallinta → hoidon tehostaminen", "prose": "Hallinta riittämätön, hoitoa tehostetaan.", "types": ["followup"] }
+      ]
+    },
+    {
+      "id": "hoitosuunnitelma",
+      "title": "Hoitosuunnitelma",
+      "items": [
+        { "id": "v-d1", "text": "Astmadiagnoosi asetettu", "prose": "Astmadiagnoosi asetettu tutkimuslöydösten perusteella.", "types": ["new"] },
+        { "id": "v-d2", "text": "ICS-lääkitys aloitettu / päivitetty", "prose": "Inhaloitava kortikosteroidi aloitettu/annos päivitetty.", "types": ["new", "followup"] },
+        { "id": "v-d3", "text": "LABA lisätty hoitoon", "prose": "Pitkävaikutteinen avaava lääke (LABA) lisätty hoitoon.", "types": ["new", "followup"] },
+        { "id": "v-d4", "text": "LTRA lisätty hoitoon", "prose": "Leukotrieenisalpaaja (LTRA) lisätty hoitoon.", "types": ["new", "followup"] },
+        { "id": "v-d5", "text": "Hoitoporrasta nostettu", "prose": "Hoitoporrasta nostettu riittämättömän hallinnan vuoksi.", "types": ["followup"] },
+        { "id": "v-d6", "text": "Hoitoporrasta laskettu", "prose": "Hoitoporrasta laskettu hyvän hallinnan vuoksi.", "types": ["followup"] },
+        { "id": "v-d7", "text": "Inhalointitekniikka tarkistettu ja ohjattu", "prose": "Inhalointitekniikka tarkistettu ja ohjaus annettu.", "types": ["new", "followup"] },
+        { "id": "v-d8", "text": "Omaseurantaohje annettu (PEF, oirepäiväkirja)", "prose": "Omaseurantaohje annettu.", "types": ["new"] },
+        { "id": "v-d9", "text": "Pahenemisvaiheen toimintaohje annettu", "prose": "Pahenemisvaiheen toimintaohje käyty läpi.", "types": ["new", "followup"] },
+        { "id": "v-d10", "text": "Kela B-lausunto / lääkekorvaukset", "prose": "B-lausunto kirjoitettu lääkekorvauksia varten.", "types": ["new"] },
+        { "id": "v-d11", "text": "Kontrollikäynti varattu", "prose": "Kontrollikäynti varattu.", "types": ["new", "followup"] }
+      ]
+    },
+    {
+      "id": "urheilija",
+      "title": "Urheilija-astma",
+      "items": [
+        { "id": "v-e1", "text": "Rasitusoireet (yskä, hengenahdistus, vinkuna)", "prose": "Rasitukseen liittyviä hengitysoireita esiintyy.", "types": ["new", "followup"] },
+        { "id": "v-e2", "text": "Kylmäilma-altistus", "prose": "Oireet liittyvät kylmäilma-altistukseen.", "types": ["new", "followup"] },
+        { "id": "v-e3", "text": "Harjoitusmäärä ja lajit selvitetty", "prose": "Harjoitusmäärä ja lajit selvitetty.", "types": ["new"] },
+        { "id": "v-e4", "text": "EILO-seulonta tehty", "prose": "EILO-oireet seulottu.", "types": ["new"] },
+        { "id": "v-e5", "text": "EVH- tai mannitolitesti tehty", "prose": "Eukapninen hyperventilaatiokoe/mannitolitesti tehty.", "types": ["new"] },
+        { "id": "v-e6", "text": "Hengityslaitteet käytössä (WellO₂, Airtrim tms.)", "prose": "Hengityksen lämmityslaite käytössä.", "types": ["new", "followup"] },
+        { "id": "v-e7", "text": "Return-to-sport -arvio", "prose": "Return-to-sport -arvio tehty: oireeton, lääkitys optimoitu.", "types": ["followup"] }
+      ]
+    },
+    {
+      "id": "paheneminen",
+      "title": "Pahenemisvaihe",
+      "items": [
+        { "id": "v-f1", "text": "Prednisoloni-kuuri aloitettu (20–40 mg/vrk 5–7 vrk)", "prose": "Prednisoloni-kuuri aloitettu.", "types": ["new", "followup"] },
+        { "id": "v-f2", "text": "Avaava lääke tehostettu", "prose": "Avaavan lääkkeen käyttöä tehostettu.", "types": ["new", "followup"] },
+        { "id": "v-f3", "text": "Hoitoon sitoutuminen arvioitu", "prose": "Hoitoon sitoutuminen arvioitu.", "types": ["followup"] },
+        { "id": "v-f4", "text": "Seurantakäynti 2–4 viikon kuluttua", "prose": "Pahenemisvaiheeseen liittyvä seurantakäynti varattu.", "types": ["new", "followup"] }
+      ]
+    }
+  ]
+}

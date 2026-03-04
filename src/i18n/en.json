@@ -39,5 +39,10 @@
   "exercise_symptom_desc": "Symptom variation during exercise",
   "open_new_tab": "Open in new tab",
   "reference_tables": "Reference tables",
-  "dementia_note": "Frailty assessment in dementia"
+  "dementia_note": "Frailty assessment in dementia",
+  "visit_text_title": "Visit Text",
+  "visit_text_subtitle": "Select visit type and tick completed items — generates a text template for the patient record",
+  "visit_copy": "Copy text",
+  "visit_copied": "Copied!",
+  "visit_empty": "Select items to generate visit text."
 }

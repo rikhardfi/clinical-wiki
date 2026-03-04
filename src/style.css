@@ -687,10 +687,139 @@ body.embed-mode .container {
   padding-top: 0.5rem;
 }
 
+/* === Visit Text Generator === */
+.visit-generator {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 3px solid var(--color-primary);
+}
+
+.visit-generator h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.visit-generator .subtitle {
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.visit-type-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.visit-type-selector label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: center;
+}
+
+.visit-type-selector input[type="radio"] {
+  accent-color: var(--color-primary);
+  width: 18px;
+  height: 18px;
+}
+
+.visit-type-selector label:has(input:checked) {
+  border-color: var(--color-primary);
+  background: #E3F2FD;
+}
+
+.visit-section {
+  margin-bottom: 1.25rem;
+}
+
+.visit-section h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary);
+}
+
+.visit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  min-height: 40px;
+}
+
+.visit-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-top: 2px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.visit-item label {
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.visit-output {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.visit-output textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  resize: vertical;
+  background: #F8F9FA;
+  color: var(--color-text);
+}
+
+.visit-output textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.visit-copy-btn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.visit-copy-btn:hover {
+  background: #0A3A8A;
+}
+
+.visit-copy-btn.copied {
+  background: var(--color-green);
+}
+
 /* === Print === */
 @media print {
   .nav, .search-container, .lang-toggle, .reset-btn, .print-btn,
-  .fc-reset-btn, .back-link {
+  .fc-reset-btn, .back-link, .visit-generator {
     display: none !important;
   }
 

@@ -1,7 +1,7 @@
 import './style.css'
 import { renderNav } from './components/nav.js'
 import { renderHome } from './pages/home.js'
-import { renderAsthma } from './pages/asthma.js'
+import { renderAsthma, bindVisitTextGenerator } from './pages/asthma.js'
 import { renderCough } from './pages/cough.js'
 import { renderFleischner, bindFleischner } from './pages/fleischner.js'
 import { renderCFS, bindCFS } from './pages/cfs.js'
@@ -121,6 +121,11 @@ function bindEvents(currentRoute) {
   // Flowchart interactivity (cough page)
   if (currentRoute === 'prolonged-cough') {
     bindFlowchart()
+  }
+
+  // Asthma visit text generator
+  if (currentRoute === 'asthma') {
+    bindVisitTextGenerator()
   }
 
   // Fleischner calculator

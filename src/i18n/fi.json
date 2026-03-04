@@ -39,5 +39,10 @@
   "exercise_symptom_desc": "Oireiden vaihtelu rasituksessa",
   "open_new_tab": "Avaa uudessa välilehdessä",
   "reference_tables": "Viitetaulukot",
-  "dementia_note": "Gerastenian arviointi muistisairailla"
+  "dementia_note": "Gerastenian arviointi muistisairailla",
+  "visit_text_title": "Käyntiteksti",
+  "visit_text_subtitle": "Valitse käyntityyppi ja rastita tehdyt asiat — saat valmiin tekstipohjan potilastietojärjestelmään",
+  "visit_copy": "Kopioi teksti",
+  "visit_copied": "Kopioitu!",
+  "visit_empty": "Valitse kohteita muodostaaksesi käyntitekstin."
 }
