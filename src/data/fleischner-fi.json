@@ -1,0 +1,195 @@
+{
+  "title": "Fleischner Society 2017 -kriteerit",
+  "subtitle": "Keuhkojen sattumalöydöksenä todettujen keuhkonodulien seurantasuositukset aikuisilla",
+  "source": "MacMahon H et al. Guidelines for Management of Incidentally Detected Pulmonary Nodules in Adults: A White Paper of the Fleischner Society 2017. Radiology 2017;284(1):228-243.",
+  "noteGeneral": "Nämä suositukset eivät koske keuhkosyövän seulontaa, immunosuppressoituja potilaita tai potilaita, joilla on tunnettu primaarikasvain.",
+  "noteDimensions": "Mitat ovat pitkän ja lyhyen akselin keskiarvo, pyöristettynä lähimpään millimetriin.",
+  "noteRisk": "Huomioi kaikki relevantit riskitekijät (ks. riskitekijät).",
+  "solid": {
+    "title": "A: Solidit nodulit",
+    "single": {
+      "title": "Yksittäinen",
+      "lowRisk": [
+        {
+          "size": "<6 mm",
+          "sizeDetail": "<100 mm³",
+          "recommendation": "Ei rutiiniseurantaa",
+          "note": "Korkean riskin potilailla, joilla epäilyttävä nodulin morfologia, ylälobuksen sijainti tai molemmat, 12 kuukauden seuranta voi olla aiheellinen (suositus 1A)."
+        },
+        {
+          "size": "6–8 mm",
+          "sizeDetail": "100–250 mm³",
+          "recommendation": "TT 6–12 kuukauden kuluttua, harkitse TT:tä 18–24 kuukauden kohdalla"
+        },
+        {
+          "size": ">8 mm",
+          "sizeDetail": ">250 mm³",
+          "recommendation": "Harkitse TT:tä 3 kuukauden kohdalla, PET/TT:tä tai kudosnäytettä"
+        }
+      ],
+      "highRisk": [
+        {
+          "size": "<6 mm",
+          "sizeDetail": "<100 mm³",
+          "recommendation": "Valinnainen TT 12 kuukauden kohdalla",
+          "note": "Korkean riskin potilailla, joilla epäilyttävä nodulin morfologia, ylälobuksen sijainti tai molemmat, 12 kuukauden seuranta voi olla aiheellinen (suositus 1A)."
+        },
+        {
+          "size": "6–8 mm",
+          "sizeDetail": "100–250 mm³",
+          "recommendation": "TT 6–12 kuukauden kuluttua, sitten TT 18–24 kuukauden kohdalla"
+        },
+        {
+          "size": ">8 mm",
+          "sizeDetail": ">250 mm³",
+          "recommendation": "Harkitse TT:tä 3 kuukauden kohdalla, PET/TT:tä tai kudosnäytettä"
+        }
+      ]
+    },
+    "multiple": {
+      "title": "Useita",
+      "lowRisk": [
+        {
+          "size": "<6 mm",
+          "sizeDetail": "<100 mm³",
+          "recommendation": "Ei rutiiniseurantaa"
+        },
+        {
+          "size": "6–8 mm",
+          "sizeDetail": "100–250 mm³",
+          "recommendation": "TT 3–6 kuukauden kuluttua, harkitse TT:tä 18–24 kuukauden kohdalla"
+        },
+        {
+          "size": ">8 mm",
+          "sizeDetail": ">250 mm³",
+          "recommendation": "TT 3–6 kuukauden kuluttua, harkitse TT:tä 18–24 kuukauden kohdalla"
+        }
+      ],
+      "highRisk": [
+        {
+          "size": "<6 mm",
+          "sizeDetail": "<100 mm³",
+          "recommendation": "Valinnainen TT 12 kuukauden kohdalla"
+        },
+        {
+          "size": "6–8 mm",
+          "sizeDetail": "100–250 mm³",
+          "recommendation": "TT 3–6 kuukauden kuluttua, sitten 18–24 kuukauden kohdalla"
+        },
+        {
+          "size": ">8 mm",
+          "sizeDetail": ">250 mm³",
+          "recommendation": "TT 3–6 kuukauden kuluttua, sitten 18–24 kuukauden kohdalla"
+        }
+      ],
+      "noteMultiple": "Seurannan aikataulu määräytyy epäilyttävimmän nodulin mukaan. Seurantavälit voivat vaihdella koon ja riskin mukaan (suositus 2A)."
+    }
+  },
+  "subsolid": {
+    "title": "B: Subsolidit nodulit",
+    "groundGlass": {
+      "title": "Maalasimaiset (ground glass)",
+      "single": {
+        "title": "Yksittäinen",
+        "items": [
+          {
+            "size": "<6 mm",
+            "sizeDetail": "<100 mm³",
+            "recommendation": "Ei rutiiniseurantaa",
+            "note": "Tietyissä epäilyttävissä noduleissa, <6 mm, harkitse seurantaa 2 ja 4 vuoden kohdalla. Jos todetaan solidi komponentti tai kasvu, harkitse resektiota (suositukset 3A ja 4A)."
+          },
+          {
+            "size": "≥6 mm",
+            "sizeDetail": "≥100 mm³",
+            "recommendation": "TT 6–12 kuukauden kuluttua persistenssin varmistamiseksi, sen jälkeen TT 2 vuoden välein 5 vuoteen asti"
+          }
+        ]
+      },
+      "multiple": {
+        "title": "Useita",
+        "items": [
+          {
+            "size": "<6 mm",
+            "sizeDetail": "<100 mm³",
+            "recommendation": "TT 3–6 kuukauden kuluttua. Jos stabiili, harkitse TT:tä 2 ja 4 vuoden kohdalla",
+            "note": "Useat <6 mm puhtaasti maalasimaiset nodulit ovat yleensä benignejä, mutta seuranta 2 ja 4 vuoden kohdalla voi olla aiheellista korkean riskin potilailla (suositus 5A)."
+          },
+          {
+            "size": "≥6 mm",
+            "sizeDetail": "≥100 mm³",
+            "recommendation": "TT 3–6 kuukauden kuluttua. Jatkoseuranta epäilyttävimmän nodulin perusteella."
+          }
+        ]
+      }
+    },
+    "partSolid": {
+      "title": "Osin solidit (part-solid)",
+      "single": {
+        "title": "Yksittäinen",
+        "items": [
+          {
+            "size": "<6 mm",
+            "sizeDetail": "<100 mm³",
+            "recommendation": "Ei rutiiniseurantaa",
+            "note": "Käytännössä osin solideja noduleita ei voida sellaisiksi määritellä ennen kuin koko on ≥6 mm, ja <6 mm nodulit eivät yleensä vaadi seurantaa."
+          },
+          {
+            "size": "≥6 mm",
+            "sizeDetail": "≥100 mm³",
+            "recommendation": "TT 3–6 kuukauden kuluttua persistenssin varmistamiseksi. Jos muuttumaton ja solidi komponentti <6 mm, vuosittainen TT 5 vuoden ajan.",
+            "note": "Persistoivat osin solidit nodulit, joiden solidi komponentti ≥6 mm, ovat erittäin epäilyttäviä (suositukset 4A–4C)."
+          }
+        ]
+      },
+      "multiple": {
+        "title": "Useita",
+        "items": [
+          {
+            "size": "<6 mm",
+            "sizeDetail": "<100 mm³",
+            "recommendation": "TT 3–6 kuukauden kuluttua. Jos stabiili, harkitse TT:tä 2 ja 4 vuoden kohdalla"
+          },
+          {
+            "size": "≥6 mm",
+            "sizeDetail": "≥100 mm³",
+            "recommendation": "TT 3–6 kuukauden kuluttua. Jatkoseuranta epäilyttävimmän nodulin perusteella."
+          }
+        ]
+      }
+    }
+  },
+  "calculator": {
+    "labels": {
+      "noduleType": "Nodulin tyyppi",
+      "presentation": "Lukumäärä",
+      "size": "Koko",
+      "risk": "Riskitaso",
+      "result": "Suositus",
+      "calculate": "Laske"
+    },
+    "options": {
+      "noduleType": [
+        { "value": "solid", "label": "Solidi" },
+        { "value": "groundGlass", "label": "Maalasimaine (ground glass)" },
+        { "value": "partSolid", "label": "Osin solidi (part-solid)" }
+      ],
+      "presentation": [
+        { "value": "single", "label": "Yksittäinen" },
+        { "value": "multiple", "label": "Useita" }
+      ],
+      "sizeSolid": [
+        { "value": "<6", "label": "<6 mm (<100 mm³)" },
+        { "value": "6-8", "label": "6–8 mm (100–250 mm³)" },
+        { "value": ">8", "label": ">8 mm (>250 mm³)" }
+      ],
+      "sizeSubsolid": [
+        { "value": "<6", "label": "<6 mm (<100 mm³)" },
+        { "value": ">=6", "label": "≥6 mm (≥100 mm³)" }
+      ],
+      "risk": [
+        { "value": "low", "label": "Matala riski" },
+        { "value": "high", "label": "Korkea riski" }
+      ]
+    }
+  }
+}

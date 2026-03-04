@@ -3,6 +3,9 @@ import { renderNav } from './components/nav.js'
 import { renderHome } from './pages/home.js'
 import { renderAsthma } from './pages/asthma.js'
 import { renderCough } from './pages/cough.js'
+import { renderFleischner, bindFleischner } from './pages/fleischner.js'
+import { renderCFS, bindCFS } from './pages/cfs.js'
+import { renderSpirometry } from './pages/spirometry.js'
 import { bindSearch } from './components/search.js'
 import { bindFlowchart } from './components/flowchart.js'
 
@@ -49,6 +52,15 @@ function route() {
       break
     case 'prolonged-cough':
       html += renderCough()
+      break
+    case 'fleischner':
+      html += renderFleischner()
+      break
+    case 'cfs':
+      html += renderCFS()
+      break
+    case 'spirometry':
+      html += renderSpirometry()
       break
     default:
       html += renderHome()
@@ -111,11 +123,29 @@ function bindEvents(currentRoute) {
     bindFlowchart()
   }
 
-  // Card navigation
+  // Fleischner calculator
+  if (currentRoute === 'fleischner') {
+    bindFleischner()
+  }
+
+  // CFS card interactivity
+  if (currentRoute === 'cfs') {
+    bindCFS()
+  }
+
+  // Card navigation (internal routes)
   document.querySelectorAll('.card[data-route]').forEach(card => {
     card.addEventListener('click', (e) => {
       e.preventDefault()
       window.location.hash = '#/' + card.dataset.route
+    })
+  })
+
+  // External link cards
+  document.querySelectorAll('.card-external[data-href]').forEach(card => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault()
+      window.open(card.dataset.href, '_blank', 'noopener,noreferrer')
     })
   })
 }

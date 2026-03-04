@@ -437,6 +437,246 @@ h1, h2, h3, h4 {
   text-decoration: underline;
 }
 
+/* === CFS Scale === */
+.cfs-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.cfs-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--color-border);
+  background: var(--color-card-bg);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cfs-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.cfs-card.active {
+  border-width: 3px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.cfs-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cfs-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cfs-score {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.cfs-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.cfs-content h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.cfs-content p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.cfs-card.active .cfs-content p {
+  color: var(--color-text);
+}
+
+.cfs-dementia-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: #F5F7FA;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--color-secondary);
+}
+
+.cfs-dementia-note h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.cfs-dementia-level {
+  margin-bottom: 0.5rem;
+}
+
+.cfs-dementia-level strong {
+  color: var(--color-primary);
+}
+
+.cfs-dementia-level p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
+
+/* === Fleischner Calculator === */
+.fleischner-calc {
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.fleischner-calc h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.fleischner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fleischner-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.fleischner-field label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+}
+
+.fleischner-field select {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  background: white;
+  cursor: pointer;
+}
+
+.fleischner-field select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.fleischner-result {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  background: #E3F2FD;
+  border-left: 4px solid var(--color-primary);
+}
+
+.fleischner-result h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.fleischner-result p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.fleischner-result .result-note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #555;
+  font-style: italic;
+}
+
+.fleischner-tables {
+  margin-top: 2rem;
+}
+
+.fleischner-tables h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.fleischner-tables h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+/* === Iframe Container === */
+.iframe-container {
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  display: block;
+}
+
+.iframe-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.iframe-link:hover {
+  text-decoration: underline;
+}
+
+/* === External Link Card === */
+.card-external {
+  position: relative;
+}
+
+.card-external::after {
+  content: "\2197";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+}
+
+/* === Source Citation === */
+.source-citation {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.5;
+}
+
 /* === Embed Mode === */
 body.embed-mode .nav,
 body.embed-mode .back-link {
@@ -494,6 +734,18 @@ body.embed-mode .container {
 
   .flowchart-container {
     break-inside: avoid;
+  }
+
+  .cfs-card {
+    break-inside: avoid;
+  }
+
+  .fleischner-calc select {
+    border: 1px solid #333;
+  }
+
+  .iframe-container {
+    display: none;
   }
 
   .ref-table th {

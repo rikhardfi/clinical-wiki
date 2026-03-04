@@ -26,6 +26,22 @@ export function renderHome() {
         <h3>${t.cough_title}</h3>
         <p>${t.cough_card_desc}</p>
       </div>
+      <div class="card" data-route="fleischner">
+        <h3>${t.fleischner_title}</h3>
+        <p>${t.fleischner_card_desc}</p>
+      </div>
+      <div class="card" data-route="cfs">
+        <h3>${t.cfs_title}</h3>
+        <p>${t.cfs_card_desc}</p>
+      </div>
+      <div class="card" data-route="spirometry">
+        <h3>${t.spirometry_title}</h3>
+        <p>${t.spirometry_card_desc}</p>
+      </div>
+      <div class="card card-external" data-href="https://rikhardfi.github.io/exercise-symptom-mapper/">
+        <h3>${t.exercise_symptom_title}</h3>
+        <p>${t.exercise_symptom_desc}</p>
+      </div>
     </div>
   `
 }

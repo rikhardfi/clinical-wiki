@@ -1,0 +1,5 @@
+clinical-wiki backlog list for improvements
+
+- lots of articles and figures are by design as pdf. adapt clinical frailty scale and include the figures too.
+- rkainu calculator is now ready. put it up.
+- https://radiogyan.com/fleishner-calculator/ i want the fleischner criteria as table or as calculator as there. pdf in folder.

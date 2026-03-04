@@ -5,6 +5,8 @@ import asthmaFi from '../data/asthma-fi.json'
 import asthmaEn from '../data/asthma-en.json'
 import coughFi from '../data/cough-fi.json'
 import coughEn from '../data/cough-en.json'
+import fleischnerData from '../data/fleischner-fi.json'
+import cfsData from '../data/cfs-fi.json'
 
 function searchData(query) {
   const lang = getLang()
@@ -60,7 +62,6 @@ function searchData(query) {
       }
     }
   }
-  // Search flowchart nodes
   for (const node of cough.flowchart.nodes) {
     if (node.text.toLowerCase().includes(q)) {
       coughResults.push({ section: 'Vuokaavio', text: node.text.replace(/\n/g, ' ') })
@@ -68,6 +69,40 @@ function searchData(query) {
   }
   if (coughResults.length > 0) {
     results.push({ page: t.prolonged_cough, route: 'prolonged-cough', items: coughResults })
+  }
+
+  // Search Fleischner criteria
+  const fleischnerResults = []
+  const searchFleischnerItems = (items, sectionName) => {
+    for (const item of items) {
+      const text = `${item.size} — ${item.recommendation}`
+      if (text.toLowerCase().includes(q)) {
+        fleischnerResults.push({ section: sectionName, text })
+      }
+    }
+  }
+  searchFleischnerItems(fleischnerData.solid.single.lowRisk, 'Solidi / Yksittäinen / Matala riski')
+  searchFleischnerItems(fleischnerData.solid.single.highRisk, 'Solidi / Yksittäinen / Korkea riski')
+  searchFleischnerItems(fleischnerData.solid.multiple.lowRisk, 'Solidi / Useita / Matala riski')
+  searchFleischnerItems(fleischnerData.solid.multiple.highRisk, 'Solidi / Useita / Korkea riski')
+  searchFleischnerItems(fleischnerData.subsolid.groundGlass.single.items, 'Maalasimaine / Yksittäinen')
+  searchFleischnerItems(fleischnerData.subsolid.groundGlass.multiple.items, 'Maalasimaine / Useita')
+  searchFleischnerItems(fleischnerData.subsolid.partSolid.single.items, 'Osin solidi / Yksittäinen')
+  searchFleischnerItems(fleischnerData.subsolid.partSolid.multiple.items, 'Osin solidi / Useita')
+  if (fleischnerResults.length > 0) {
+    results.push({ page: t.fleischner_title, route: 'fleischner', items: fleischnerResults })
+  }
+
+  // Search CFS
+  const cfsResults = []
+  for (const level of cfsData.levels) {
+    const text = `${level.score}. ${level.title} — ${level.description}`
+    if (text.toLowerCase().includes(q)) {
+      cfsResults.push({ section: `CFS ${level.score}`, text: `${level.title}: ${level.description}` })
+    }
+  }
+  if (cfsResults.length > 0) {
+    results.push({ page: t.cfs_title, route: 'cfs', items: cfsResults })
   }
 
   return results

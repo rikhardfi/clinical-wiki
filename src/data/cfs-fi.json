@@ -1,0 +1,81 @@
+{
+  "title": "Clinical Frailty Scale",
+  "titleFi": "Asteikko gerastenian kliiniseen arviointiin",
+  "source": "Rockwood K et al. A global clinical measure of fitness and frailty in elderly people. CMAJ 2005;173:489-495.",
+  "translationSource": "Suomennos: E. Jämsen ja H. Kerminen, Tampereen yliopisto, 2019.",
+  "copyright": "©2009. Version 1.2_EN. Geriatric Medicine Research, Dalhousie University, Halifax, Canada.",
+  "levels": [
+    {
+      "score": 1,
+      "title": "Erittäin hyväkuntoiset",
+      "description": "Elinvoimaiset, aktiiviset, energiset ja motivoituneet henkilöt. He kuntoilevat yleensä säännöllisesti. He ovat ikäryhmästään parhaassa fyysisessä kunnossa.",
+      "color": "#2E7D32"
+    },
+    {
+      "score": 2,
+      "title": "Hyväkuntoiset",
+      "description": "Henkilöt, joilla ei ole ajankohtaisia sairauden oireita mutta joiden kunto on huonompi kuin kategoriassa 1. Usein he kuntoilevat tai ovat aktiivisia ajoittain, esim. kausiluontoisesti.",
+      "color": "#4CAF50"
+    },
+    {
+      "score": 3,
+      "title": "Hyvin pärjäävät",
+      "description": "Henkilöt, joiden lääketieteelliset ongelmat ovat hyvin hallinnassa, mutta jotka eivät harrasta säännöllistä liikuntaa arkikävelyä lukuun ottamatta.",
+      "color": "#7CB342"
+    },
+    {
+      "score": 4,
+      "title": "Haavoittuvat",
+      "description": "Henkilöt, jotka eivät tarvitse toisten apua päivittäin, mutta usein erilaiset oireet rajoittavat aktiivisuutta. Yleinen oire on hidastuminen ja/tai väsynyt olo päivällä.",
+      "color": "#FDD835"
+    },
+    {
+      "score": 5,
+      "title": "Lievästi hauraat",
+      "description": "Näiden henkilöiden toiminta on usein selvemmin hidastunutta ja he tarvitsevat apua vaativammissa päivittäistoiminnoissa (raha-asioiden hoito, kulkuvälineiden käyttö, raskaat kotityöt, lääkityksestä huolehtiminen). Yleensä lievä hauraus haittaa yhä enemmän kaupassa käyntiä, ulkona liikkumista, ruoan valmistusta ja kotitöitä.",
+      "color": "#FFB300"
+    },
+    {
+      "score": 6,
+      "title": "Kohtalaisen hauraat",
+      "description": "Henkilöt, jotka tarvitsevat apua kaikessa kodin ulkopuolisessa asioinnissa ja kotitöissä. Sisätiloissa heillä on usein vaikeuksia portaissa kulkemisessa ja he tarvitsevat apua peseytymisessä ja mahdollisesti vähäistä apua pukeutumisessa (ohjauksen ja valvonnan tarve).",
+      "color": "#F57C00"
+    },
+    {
+      "score": 7,
+      "title": "Vaikeasti hauraat",
+      "description": "Täysin riippuvaisia toisten avusta itsestään huolehtimisessa mistä tahansa syystä (fyysinen tai kognitiivinen). Heidän tilansa näyttää vakaalta eikä kuolemanriski ole suuri (seuraavan n. 6 kk sisällä).",
+      "color": "#E53935"
+    },
+    {
+      "score": 8,
+      "title": "Erittäin vaikeasti hauraat",
+      "description": "Täysin toisten avusta riippuvaiset henkilöt, jotka ovat elämänsä loppuvaiheessa. Yleensä he eivät pysty toipumaan lievästäkään sairaudesta.",
+      "color": "#C62828"
+    },
+    {
+      "score": 9,
+      "title": "Kuolemansairaat",
+      "description": "Henkilöt, jotka ovat elämän loppuvaiheessa. Tähän kategoriaan luetaan henkilöt, joiden elinajanodote on alle 6 kuukautta, vaikka he eivät ole muuten selvästi hauraita.",
+      "color": "#B71C1C"
+    }
+  ],
+  "dementiaNote": {
+    "title": "Gerastenian arviointi muistisairailla henkilöillä",
+    "text": "Haurauden vaikeusaste vastaa muistisairauden vaihetta.",
+    "levels": [
+      {
+        "title": "Lievä dementia",
+        "description": "Tyypillisiä oireita ovat edeltävien tapahtumien yksityiskohtien unohtaminen, vaikka tapahtuma itsessään on palautettavissa mieleen, samojen kysymysten tai tarinan toistaminen ja vetäytyminen sosiaalisista tilanteista."
+      },
+      {
+        "title": "Keskivaikea dementia",
+        "description": "Lähimuisti on selvästi heikentynyt, vaikka aiemman elämän tapahtumat näyttävät olevan hyvin muistissa. He tarvitsevat ohjausta itsestään huolehtimiseen."
+      },
+      {
+        "title": "Vaikea dementia",
+        "description": "Eivät kykene huolehtimaan itsestään ilman toisten apua."
+      }
+    ]
+  }
+}
