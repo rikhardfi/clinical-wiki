@@ -10,11 +10,12 @@
         { "id": "a3", "text": "Oireiden ajoitus: levossa / rasituksessa / rasituksen jälkeen / yöllä" },
         { "id": "a4", "text": "Oireiden laukaisijat: kylmä, pöly, eläimet, hajut, rasitus, infektiot" },
         { "id": "a5", "text": "Allergiat: siitepöly, eläin, muu — lääkärin toteama?" },
-        { "id": "a6", "text": "Tupakointi / nuuska / sähkötupakka" },
-        { "id": "a7", "text": "Työympäristö: pöly, kaasut, savu" },
-        { "id": "a8", "text": "Liitännäissairaudet: refluksi, uniapnea, masennus, rytmihäiriö" },
-        { "id": "a9", "text": "Lääkitys: nykyiset astmalääkkeet (jatkuva + tarvittaessa), nimetään" },
-        { "id": "a10", "text": "Astman hallinta: oireet viikossa, yöoireet, avaavan lääkkeen käyttö, toimintakyky" }
+        { "id": "a6", "text": "Tupakointi / nuuska / sähkötupakka / vaping" },
+        { "id": "a7", "text": "Työympäristö: pöly, kaasut, savu (ammattiastman seulonta)" },
+        { "id": "a8", "text": "Liitännäissairaudet: allerginen nuha, nenäpolyypit, refluksi, ylipaino, uniapnea, masennus, rytmihäiriö" },
+        { "id": "a9", "text": "Lääkitys: nykyiset astmalääkkeet (jatkuva + tarvittaessa), nimetään; NSAID / beetasalpaajat?" },
+        { "id": "a10", "text": "Astman hallinta: oireet viikossa, yöoireet, avaavan lääkkeen käyttö, toimintakyky" },
+        { "id": "a11", "text": "Pahenemisvaihehistoria: kortisonijakuurit, päivystysvisio, sairaalajaksot viimeisen 12 kk aikana" }
       ]
     },
     {
@@ -25,26 +26,27 @@
         { "id": "b1", "text": "Spirometria + bronkodilataatiokoe (FEV₁/FVC, ≥12 % ja 200 ml parannus)" },
         { "id": "b2", "text": "PEF-seuranta 2 viikkoa (≥20 % ja 60 L/min vuorokausivaihtelu TAI ≥15 % avaava vaste)" },
         { "id": "b3", "text": "Bronkiaalinen altistuskoe harkinta: metakoliini (PD₂₀FEV₁ ≤0,6 mg), mannitoli, rasituskoe" },
-        { "id": "b4", "text": "FeNO (tulehdusmarkkeri)" },
-        { "id": "b5", "text": "Allergiaseula / prick-testit" },
-        { "id": "b6", "text": "Thorax-rtg (tarvittaessa)" },
-        { "id": "b7", "text": "Verikokeet: PVK, CRP, kokonais-IgE, spesifiset IgE (tarvittaessa)" }
+        { "id": "b4", "text": "FeNO: >25 ppb viittaa eosinofiiliseen inflammaatioon; >50 ppb vahva tuki; <25 ppb epätodennäköisempi" },
+        { "id": "b5", "text": "Veren eosinofiilit (≥300 solua/µL tukee T2-high-fenotyyppiä; ohjaa biologisen valinnan)" },
+        { "id": "b6", "text": "Allergiaseula / prick-testit / spesifinen IgE-paneeli" },
+        { "id": "b7", "text": "Thorax-rtg (tarvittaessa: ensiesiintymä, epätyypilliset piirteet, huono hoitovaste)" },
+        { "id": "b8", "text": "Verikokeet: PVK, CRP, kokonais-IgE (tarvittaessa)" }
       ]
     },
     {
       "id": "hoitoportaat",
-      "title": "3. Hoitoportaat — Käypä hoito / GINA",
+      "title": "3. Hoitoportaat — GINA 2024 / Käypä hoito",
       "type": "table",
       "tables": [
         {
-          "caption": "Hoitoportaat",
+          "caption": "Hoitoportaat (GINA 2024 reitti 1 — ensisijainen)",
           "headers": ["Porras", "Hoito", "ICS-annos"],
           "rows": [
-            ["1", "SABA tarvittaessa TAI ICS-formoteroli tarvittaessa", "—"],
-            ["2", "Pieniannoksinen ICS ± LABA", "Budesonidi 200–400 µg/vrk"],
-            ["3", "Keskiannoksinen ICS + LABA TAI + LTRA/LAMA", "Budesonidi >400–800 µg/vrk"],
-            ["4", "Suuriannoksinen ICS + LABA ± LTRA/LAMA, biologiset", "Budesonidi >800 µg/vrk"],
-            ["5", "Erikoislääkärijohtoinen: biologiset fenotyypin mukaan", "—"]
+            ["1", "Tarvittaessa pieniannoksinen ICS-formoteroli (ensisijainen); pelkkä SABA ei enää suositella yksin", "—"],
+            ["2", "Pieniannoksinen ICS-formoteroli ylläpito + tarvittaessa", "Budesonidi 200–400 µg/vrk"],
+            ["3", "Keskiannoksinen ICS-formoteroli ylläpito + tarvittaessa", "Budesonidi >400–800 µg/vrk"],
+            ["4", "Suuriannoksinen ICS-formoteroli + LAMA (tiotropium); T2-fenotyypin arvio", "Budesonidi >800 µg/vrk"],
+            ["5", "Erikoislääkärijohtoinen: biologinen lääke fenotyypin mukaan (ks. alla)", "—"]
           ]
         },
         {
@@ -53,7 +55,20 @@
           "rows": [
             ["Beklometasoni (Innovair®)", "100–200 µg/vrk", ">200–400", ">400"],
             ["Budesonidi (Pulmicort®)", "200–400 µg/vrk", ">400–800", ">800"],
-            ["Flutikasoni (Flixotide®)", "100–250 µg/vrk", ">250–500", ">500"]
+            ["Flutikasonipropionaatti (Flixotide®)", "100–250 µg/vrk", ">250–500", ">500"],
+            ["Flutikasonifuroaatti (Relvar Ellipta®)", "100 µg/vrk", "—", "200 µg/vrk"],
+            ["Mometasonifuroaatti (Asmanex®)", "200 µg/vrk", "400", ">400"]
+          ]
+        },
+        {
+          "caption": "Biologiset lääkkeet fenotyypin mukaan (porras 5)",
+          "headers": ["Biologinen", "Kohde", "Keskeinen kriteeri"],
+          "rows": [
+            ["Omalitsumabi (Xolair®)", "Anti-IgE", "Allerginen astma, kohonnut kokonais-IgE, positiivinen allergiatesti"],
+            ["Mepolitsumabi (Nucala®)", "Anti-IL-5", "Eosinofiilinen: veren eos ≥300/µL, ≥2 pahenemisvaihetta/vuosi"],
+            ["Benralitsumabi (Fasenra®)", "Anti-IL-5Rα", "Eosinofiilinen: veren eos ≥300/µL, nopea eosinofiilien eliminaatio"],
+            ["Dupilumabi (Dupixent®)", "Anti-IL-4Rα", "T2-high: eos ≥150/µL TAI FeNO ≥25 ppb; sopii myös CRSwNP/ekseemaan"],
+            ["Tezepelumabi (Tezspire®)", "Anti-TSLP", "Vaikea astma kaikissa fenotyypeissä (T2-high ja T2-low)"]
           ]
         }
       ]
@@ -63,11 +78,13 @@
       "title": "3b. Hoidon hallinta",
       "type": "checklist",
       "items": [
-        { "id": "c1", "text": "Oireet ≤2×/viikko → hyvä hallinta" },
-        { "id": "c2", "text": "Ei yöoireita" },
+        { "id": "c1", "text": "Päiväoireet ≤2×/viikko → hyvä hallinta" },
+        { "id": "c2", "text": "Ei yöheräämistä astman takia" },
         { "id": "c3", "text": "Ei toimintakyvyn rajoitusta" },
-        { "id": "c4", "text": "Avaava lääke ≤2×/viikko" },
-        { "id": "c5", "text": "Hyvä hallinta 6–12 kk → hoidon keventäminen" }
+        { "id": "c4", "text": "Avaava lääke ≤2×/viikko (SABA tai ICS-formoteroli tarvittaessa)" },
+        { "id": "c5", "text": "ACT-pisteet: ≥20 hyvä hallinta, 16–19 osittainen, ≤15 huono" },
+        { "id": "c6", "text": "Hyvä hallinta ≥3 kk → hoidon keventäminen: ICS-annoksen pienennys 25–50 %" },
+        { "id": "c7", "text": "Pahenemisvaiheen riskitekijät: runsas SABA-käyttö, huono hoitositoutuminen, ei ICS:ää, matala FEV₁, tupakointi, eosinofilia, ylipaino" }
       ]
     },
     {
@@ -81,10 +98,11 @@
         { "id": "d4", "text": "Hengitystieinfektiot ja sairaspäivät viime kaudella" },
         { "id": "d5", "text": "EILO-seulonta: kurkunpään oireet levossa/rasituksessa/jälkeen (Newcastle-kysely)" },
         { "id": "d6", "text": "Hengityslaitteiden käyttö: WellO₂, Sarvikuono, Airtrim, Lungplus" },
-        { "id": "d7", "text": "EVH-testi tai mannitolitesti harkinta (eukapninen hyperventilaatio)" },
-        { "id": "d8", "text": "Rasitustesti: juoksumatolla tai kenttätesti oirearvio" },
+        { "id": "d7", "text": "EVH-testi tai mannitolitesti harkinta (eukapninen hyperventilaatio); korkea spesifisyys urheilijoilla" },
+        { "id": "d8", "text": "Rasitustesti: juoksumatolla tai kenttätesti + sarjaspirometria" },
         { "id": "d9", "text": "Refluksioireet: polttava tunne, röyhtäily, hapan maku (usein liittyy urheilija-yskään)" },
-        { "id": "d10", "text": "Return-to-sport: oireeton, lääkitys optimoitu, PEF vakaa" }
+        { "id": "d10", "text": "Äänihuulten toimintahäiriö / ILO: CLE (jatkuva laryngoskopia rasituksessa) jos EILO-epäily" },
+        { "id": "d11", "text": "Return-to-sport: oireeton, lääkitys optimoitu, PEF vakaa, dopingtarkistus (TUE tarvittaessa)" }
       ]
     },
     {
@@ -92,11 +110,12 @@
       "title": "5. Pahenemisvaiheen hoito",
       "type": "checklist",
       "items": [
-        { "id": "e1", "text": "Prednisoloni 20–40 mg/vrk 5–7 vrk" },
-        { "id": "e2", "text": "Avaava lääke tehostus" },
-        { "id": "e3", "text": "Inhalointitekniikan tarkistus" },
-        { "id": "e4", "text": "Hoitoon sitoutumisen arvio" },
-        { "id": "e5", "text": "Seurantakäynti 2–4 viikon kuluttua" }
+        { "id": "e1", "text": "Prednisoloni 20–40 mg/vrk 5–7 vrk (ei tarvitse purkaa lyhyissä kuureissa)" },
+        { "id": "e2", "text": "Avaava lääke tehostus: SABA 4–10 annosta 20 min välein 1. tunti, tai ICS-formoteroli tarvittaessa max 72 µg/vrk formoterolia" },
+        { "id": "e3", "text": "Inhalointitekniikan tarkistus ja korjaus" },
+        { "id": "e4", "text": "Hoitoon sitoutumisen arvio ja esteiden tunnistaminen" },
+        { "id": "e5", "text": "Laukaisevien tekijöiden tunnistaminen (infektio, allergeeni, NSAID, beetasalpaaja)" },
+        { "id": "e6", "text": "Seurantakäynti 2–4 viikon kuluttua; ylläpitohoidon tehostus jos ≥2 pahenemisvaihetta/vuosi" }
       ]
     },
     {
@@ -104,11 +123,12 @@
       "title": "6. Potilasohjaus",
       "type": "checklist",
       "items": [
-        { "id": "f1", "text": "Inhalointitekniikka opetettu ja tarkistettu" },
-        { "id": "f2", "text": "Omaseurantaohje (PEF, oirepäiväkirja)" },
-        { "id": "f3", "text": "Pahenemisvaiheohje (milloin hakeutua hoitoon)" },
+        { "id": "f1", "text": "Inhalointitekniikka: opeta, näytä, tarkista — toista jokaisella käynnillä" },
+        { "id": "f2", "text": "Omaseurantaohje (PEF-päiväkirja, oirepäiväkirja, ACT-kysely)" },
+        { "id": "f3", "text": "Kirjallinen astman omahoito-ohje (vihreä/keltainen/punainen vyöhyke — milloin tehostaa, milloin hoitoon)" },
         { "id": "f4", "text": "Lääkekorvaukset (Kela B-lausunto astmalääkkeisiin)" },
-        { "id": "f5", "text": "Kontrollikäynti varattu" }
+        { "id": "f5", "text": "Liitännäissairauksien hoito: allerginen nuha (yhtenäinen hengitystie), refluksi, ylipaino" },
+        { "id": "f6", "text": "Kontrollikäynti varattu (3 kk hoidon aloituksesta/muutoksesta, sitten vuosittain jos vakaa)" }
       ]
     }
   ]

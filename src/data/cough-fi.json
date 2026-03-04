@@ -39,11 +39,13 @@
       "type": "checklist",
       "items": [
         { "id": "g1", "text": "Yskän kesto: akuutti (<3 vk), subakuutti (3–8 vk), krooninen (>8 vk)" },
-        { "id": "g2", "text": "Yskän luonne: kuiva vs. limaisuus, ajoitus (yö/aamu/päivä)" },
-        { "id": "g3", "text": "Punaisten lippujen tarkistus: veriyskä, laihtuminen, äänimuutos, nielemisvaikeus, tupakoitsija >45 v" },
-        { "id": "g4", "text": "Lääkelista: ACE-estäjä? (yleisin iatrogeeninen syy)" },
-        { "id": "g5", "text": "Tupakointi / altistuminen" },
-        { "id": "g6", "text": "Ympäristöaltistukset: työ, koti, harrastukset" }
+        { "id": "g2", "text": "Yskän luonne: kuiva vs. limaisuus, ajoitus (yö/aamu/päivä), asentoriippuvainen" },
+        { "id": "g3", "text": "Punaisten lippujen tarkistus: veriyskä, laihtuminen >5 %, äänimuutos >3 vk, nielemisvaikeus, tupakoitsija >45 v, hengenahdistus levossa" },
+        { "id": "g4", "text": "Lääkelista: ACE-estäjä? (yleisin iatrogeeninen syy — vaihda ARB:ksi)" },
+        { "id": "g5", "text": "Tupakointi / vaping / passiivinen altistuminen" },
+        { "id": "g6", "text": "Ympäristöaltistukset: työ (pöly, kemikaalit), koti (home, lemmikit), harrastukset" },
+        { "id": "g7", "text": "Liitännäisoireet: nenän tukkoisuus/valuminen, närästys, vinkuna, rykiminen, äänen väsyminen" },
+        { "id": "g8", "text": "Vaikutus elämänlaatuun: unihäiriöt, sosiaalinen haitta, virtsankarkailu" }
       ]
     },
     {
@@ -51,10 +53,11 @@
       "title": "2. Perustutkimukset",
       "type": "checklist",
       "items": [
-        { "id": "h1", "text": "Thorax-rtg" },
+        { "id": "h1", "text": "Thorax-rtg (pakollinen kroonisen yskän selvittelyssä)" },
         { "id": "h2", "text": "Spirometria + bronkodilataatiokoe" },
         { "id": "h3", "text": "PVK + CRP (infektio, eosinofilia)" },
-        { "id": "h4", "text": "FeNO (eosinofiilinen inflammaatio)" }
+        { "id": "h4", "text": "FeNO: >25 ppb viittaa eosinofiiliseen inflammaatioon → ennustaa ICS-vastetta" },
+        { "id": "h5", "text": "PEF-seuranta 2 viikkoa harkinta, jos yskävarianttiastma-epäily" }
       ]
     },
     {
@@ -64,8 +67,9 @@
       "items": [
         { "id": "i1", "text": "Vaihe 1: Nenäkortikosteroidi (mometasoni / flutikasonifuroaatti) 2–4 viikkoa → Vastaa: ylätiereaktio (post-nasal drip)" },
         { "id": "i2", "text": "Vaihe 2: ICS (budesonidi 400–800 µg/vrk) 6–8 viikkoa → Vastaa: eosinofiilinen inflammaatio / yskävarianttiastma" },
-        { "id": "i3", "text": "Vaihe 3: PPI (omepratsoli/esomepratsoli 20–40 mg ×2) 8 viikkoa → Vastaa: refluksiyskä" },
-        { "id": "i4", "text": "Vaihe 4: Ei vastetta → Erikoislääkäriin (keuhkolääkäri / KNK)" }
+        { "id": "i3", "text": "Vaihe 3: PPI (omepratsoli/esomepratsoli 20–40 mg ×2) 8 viikkoa → Vastaa: refluksiyskä (huom: näyttö heikompi; paras happorefluks, heikompi non-asidinen)" },
+        { "id": "i4", "text": "Vaihe 4: Ei vastetta mihinkään → Refraktorinen krooninen yskä; erikoislääkäriin (keuhkolääkäri / KNK)" },
+        { "id": "i5", "text": "Arvioi vaste jokaisessa vaiheessa: yskä-VAS tai Leicester Cough Questionnaire (LCQ) ennen ja jälkeen hoitokokeilun" }
       ]
     },
     {
@@ -73,11 +77,25 @@
       "title": "4. Erikoislääkärin tutkimukset",
       "type": "checklist",
       "items": [
-        { "id": "j1", "text": "HRCT thorax" },
-        { "id": "j2", "text": "Bronkoskopia (tarvittaessa)" },
-        { "id": "j3", "text": "Yskärefleksitesti (capsaicin provocation)" },
-        { "id": "j4", "text": "24h pH-impedanssimittaus" },
-        { "id": "j5", "text": "Laryngoskopia (EILO, LPR)" }
+        { "id": "j1", "text": "HRCT thorax (bronkiektasiat, ILD, pienten hengitysteiden sairaus)" },
+        { "id": "j2", "text": "Bronkoskopia + BAL (tarvittaessa: maligniteetti-, ILD-, infektioepäily)" },
+        { "id": "j3", "text": "Yskärefleksin herkkyystesti (capsaicin-provokaatio — tunnistaa yskän yliherkkyys)" },
+        { "id": "j4", "text": "24h pH-impedanssimittaus (happo- ja ei-happorefluks)" },
+        { "id": "j5", "text": "Laryngoskopia (EILO, LPR — laryngofaryngeaalinen refluksi)" },
+        { "id": "j6", "text": "Metakoliinialtistuskoe (jos yskävarianttiastma-epäily mutta spirometria normaali)" }
+      ]
+    },
+    {
+      "id": "refractory",
+      "title": "5. Refraktorinen / selittämätön krooninen yskä",
+      "type": "checklist",
+      "items": [
+        { "id": "k1", "text": "Harkitse yskän yliherkkyys -oireyhtymää: yskärefleksin sentraalinen herkistyminen; laukaisijat normaalitason ärsykkeillä" },
+        { "id": "k2", "text": "Neuromodulaattorihoito: gabapentiini 300→1800 mg/vrk (NNT ~4); kokeilu 4–8 viikkoa; pienennä annosta jos toimii" },
+        { "id": "k3", "text": "Vaihtoehto: pregabaliini 75–300 mg/vrk tai pieniannoksinen morfiini 5–10 mg ×2/vrk (erikoislääkärijohtoinen)" },
+        { "id": "k4", "text": "Puheterapia (SLT): yskän hallintatekniikat, kurkunpään hygienia, hengitysuudelleenkoulutus; näyttöön perustuva" },
+        { "id": "k5", "text": "Gefapixantti (P2X3-antagonisti): EMA-hyväksytty refraktoriseen krooniseen yskään; makuhäiriö yleinen haittavaikutus" },
+        { "id": "k6", "text": "Multimodaalinen lähestymistapa suositeltava: yhdistä neuromodulaattori + puheterapia parhaisiin tuloksiin" }
       ]
     }
   ],
@@ -87,6 +105,7 @@
     "Äänen käheys >3 viikkoa",
     "Nielemisvaikeus",
     "Tupakoitsija >45 v + uusi yskä",
-    "Hengenahdistus levossa"
+    "Hengenahdistus levossa",
+    "Toistuvat pneumoniat"
   ]
 }

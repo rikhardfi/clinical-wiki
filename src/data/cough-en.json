@@ -39,11 +39,13 @@
       "type": "checklist",
       "items": [
         { "id": "g1", "text": "Cough duration: acute (<3 wk), subacute (3–8 wk), chronic (>8 wk)" },
-        { "id": "g2", "text": "Cough character: dry vs. productive, timing (night/morning/day)" },
-        { "id": "g3", "text": "Red flag check: hemoptysis, weight loss, voice change, dysphagia, smoker >45 y" },
-        { "id": "g4", "text": "Medication list: ACE inhibitor? (most common iatrogenic cause)" },
-        { "id": "g5", "text": "Smoking / exposure" },
-        { "id": "g6", "text": "Environmental exposures: work, home, hobbies" }
+        { "id": "g2", "text": "Cough character: dry vs. productive, timing (night/morning/day), position-related" },
+        { "id": "g3", "text": "Red flag check: hemoptysis, weight loss >5%, voice change >3 wk, dysphagia, smoker >45 y, dyspnea at rest" },
+        { "id": "g4", "text": "Medication list: ACE inhibitor? (most common iatrogenic cause — switch to ARB)" },
+        { "id": "g5", "text": "Smoking / vaping / passive smoke exposure" },
+        { "id": "g6", "text": "Environmental exposures: work (dust, chemicals), home (mold, pets), hobbies" },
+        { "id": "g7", "text": "Associated symptoms: nasal congestion/drip, heartburn, wheeze, throat clearing, voice fatigue" },
+        { "id": "g8", "text": "Impact on quality of life: sleep disturbance, social embarrassment, urinary incontinence" }
       ]
     },
     {
@@ -51,10 +53,11 @@
       "title": "2. Basic Investigations",
       "type": "checklist",
       "items": [
-        { "id": "h1", "text": "Chest X-ray" },
+        { "id": "h1", "text": "Chest X-ray (mandatory in chronic cough workup)" },
         { "id": "h2", "text": "Spirometry + bronchodilator test" },
         { "id": "h3", "text": "CBC + CRP (infection, eosinophilia)" },
-        { "id": "h4", "text": "FeNO (eosinophilic inflammation)" }
+        { "id": "h4", "text": "FeNO: >25 ppb suggests eosinophilic inflammation → predicts ICS response" },
+        { "id": "h5", "text": "Consider PEF monitoring 2 weeks if cough-variant asthma suspected" }
       ]
     },
     {
@@ -62,10 +65,11 @@
       "title": "3. Empirical Treatment Trial — ERS 2024",
       "type": "checklist",
       "items": [
-        { "id": "i1", "text": "Step 1: Nasal corticosteroid (mometasone / fluticasone furoate) 2–4 weeks → Response: upper airway cough (post-nasal drip)" },
+        { "id": "i1", "text": "Step 1: Nasal corticosteroid (mometasone / fluticasone furoate) 2–4 weeks → Response: upper airway cough syndrome (post-nasal drip)" },
         { "id": "i2", "text": "Step 2: ICS (budesonide 400–800 µg/day) 6–8 weeks → Response: eosinophilic inflammation / cough-variant asthma" },
-        { "id": "i3", "text": "Step 3: PPI (omeprazole/esomeprazole 20–40 mg ×2) 8 weeks → Response: reflux cough" },
-        { "id": "i4", "text": "Step 4: No response → Specialist referral (pulmonologist / ENT)" }
+        { "id": "i3", "text": "Step 3: PPI (omeprazole/esomeprazole 20–40 mg ×2) 8 weeks → Response: reflux cough (note: evidence weaker; best for acid reflux, less for non-acid)" },
+        { "id": "i4", "text": "Step 4: No response to any → Refractory chronic cough; specialist referral (pulmonologist / ENT)" },
+        { "id": "i5", "text": "Assess response at each step: use cough VAS or Leicester Cough Questionnaire (LCQ) before and after trial" }
       ]
     },
     {
@@ -73,11 +77,25 @@
       "title": "4. Specialist Investigations",
       "type": "checklist",
       "items": [
-        { "id": "j1", "text": "HRCT thorax" },
-        { "id": "j2", "text": "Bronchoscopy (if indicated)" },
-        { "id": "j3", "text": "Cough reflex test (capsaicin provocation)" },
-        { "id": "j4", "text": "24h pH-impedance monitoring" },
-        { "id": "j5", "text": "Laryngoscopy (EILO, LPR)" }
+        { "id": "j1", "text": "HRCT thorax (bronchiectasis, ILD, small airway disease)" },
+        { "id": "j2", "text": "Bronchoscopy + BAL (if indicated: suspected malignancy, ILD, infection)" },
+        { "id": "j3", "text": "Cough reflex sensitivity test (capsaicin provocation — identifies cough hypersensitivity)" },
+        { "id": "j4", "text": "24h pH-impedance monitoring (acid + non-acid reflux events)" },
+        { "id": "j5", "text": "Laryngoscopy (EILO, LPR — laryngopharyngeal reflux)" },
+        { "id": "j6", "text": "Methacholine challenge (if cough-variant asthma suspected but spirometry normal)" }
+      ]
+    },
+    {
+      "id": "refractory",
+      "title": "5. Refractory / Unexplained Chronic Cough",
+      "type": "checklist",
+      "items": [
+        { "id": "k1", "text": "Consider cough hypersensitivity syndrome: central sensitization of cough reflex; triggers at normal stimuli levels" },
+        { "id": "k2", "text": "Neuromodulator therapy: gabapentin 300→1800 mg/day (NNT ~4); trial 4–8 weeks; taper if effective" },
+        { "id": "k3", "text": "Alternative: pregabalin 75–300 mg/day or low-dose morphine 5–10 mg ×2/day (specialist-led)" },
+        { "id": "k4", "text": "Speech and language therapy (SLT): cough suppression techniques, laryngeal hygiene, breathing retraining; evidence-based" },
+        { "id": "k5", "text": "Gefapixant (P2X3 antagonist): EMA-approved for refractory chronic cough; dysgeusia is common side effect" },
+        { "id": "k6", "text": "Multimodal approach recommended: combine neuromodulator + SLT for best outcomes" }
       ]
     }
   ],
@@ -87,6 +105,7 @@
     "Hoarseness >3 weeks",
     "Dysphagia (difficulty swallowing)",
     "Smoker >45 y + new cough",
-    "Dyspnea at rest"
+    "Dyspnea at rest",
+    "Recurrent pneumonia"
   ]
 }

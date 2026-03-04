@@ -10,11 +10,12 @@
         { "id": "a3", "text": "Timing: at rest / during exercise / post-exercise / at night" },
         { "id": "a4", "text": "Triggers: cold, dust, animals, odors, exercise, infections" },
         { "id": "a5", "text": "Allergies: pollen, animal, other — physician-confirmed?" },
-        { "id": "a6", "text": "Smoking / snus / e-cigarettes" },
-        { "id": "a7", "text": "Work environment: dust, gases, fumes" },
-        { "id": "a8", "text": "Comorbidities: reflux, sleep apnea, depression, arrhythmia" },
-        { "id": "a9", "text": "Medications: current asthma drugs (maintenance + PRN), name them" },
-        { "id": "a10", "text": "Asthma control: weekly symptoms, night symptoms, reliever use, functional capacity" }
+        { "id": "a6", "text": "Smoking / snus / e-cigarettes / vaping" },
+        { "id": "a7", "text": "Work environment: dust, gases, fumes (occupational asthma screening)" },
+        { "id": "a8", "text": "Comorbidities: allergic rhinitis, nasal polyps, reflux, obesity, sleep apnea, depression, arrhythmia" },
+        { "id": "a9", "text": "Medications: current asthma drugs (maintenance + PRN), name them; NSAIDs / beta-blockers?" },
+        { "id": "a10", "text": "Asthma control: weekly symptoms, night symptoms, reliever use, functional capacity" },
+        { "id": "a11", "text": "Exacerbation history: OCS courses, ED visits, hospitalizations in past 12 months" }
       ]
     },
     {
@@ -25,26 +26,27 @@
         { "id": "b1", "text": "Spirometry + bronchodilator test (FEV₁/FVC, ≥12% and 200 mL improvement)" },
         { "id": "b2", "text": "PEF monitoring 2 weeks (≥20% and 60 L/min diurnal variation OR ≥15% bronchodilator response)" },
         { "id": "b3", "text": "Consider bronchial provocation: methacholine (PD₂₀FEV₁ ≤0.6 mg), mannitol, exercise test" },
-        { "id": "b4", "text": "FeNO (inflammatory marker)" },
-        { "id": "b5", "text": "Allergy screening / prick tests" },
-        { "id": "b6", "text": "Chest X-ray (if indicated)" },
-        { "id": "b7", "text": "Blood tests: CBC, CRP, total IgE, specific IgE (if indicated)" }
+        { "id": "b4", "text": "FeNO: >25 ppb suggestive of eosinophilic inflammation; >50 ppb strongly supports; <25 ppb less likely" },
+        { "id": "b5", "text": "Blood eosinophils (≥300 cells/µL supports T2-high phenotype; guides biologic selection)" },
+        { "id": "b6", "text": "Allergy screening / prick tests / specific IgE panel" },
+        { "id": "b7", "text": "Chest X-ray (if indicated: first presentation, atypical features, poor treatment response)" },
+        { "id": "b8", "text": "Blood tests: CBC, CRP, total IgE (if indicated)" }
       ]
     },
     {
       "id": "hoitoportaat",
-      "title": "3. Treatment Steps — Finnish Guidelines / GINA",
+      "title": "3. Treatment Steps — GINA 2024 / Finnish Guidelines",
       "type": "table",
       "tables": [
         {
-          "caption": "Treatment Steps",
+          "caption": "Treatment Steps (GINA 2024 Track 1 — preferred)",
           "headers": ["Step", "Treatment", "ICS dose"],
           "rows": [
-            ["1", "SABA as needed OR ICS-formoterol as needed", "—"],
-            ["2", "Low-dose ICS ± LABA", "Budesonide 200–400 µg/day"],
-            ["3", "Medium-dose ICS + LABA OR + LTRA/LAMA", "Budesonide >400–800 µg/day"],
-            ["4", "High-dose ICS + LABA ± LTRA/LAMA, biologics", "Budesonide >800 µg/day"],
-            ["5", "Specialist-led: biologics by phenotype", "—"]
+            ["1", "As-needed low-dose ICS-formoterol (preferred); SABA-only no longer recommended alone", "—"],
+            ["2", "Low-dose ICS-formoterol maintenance + as-needed", "Budesonide 200–400 µg/day"],
+            ["3", "Medium-dose ICS-formoterol maintenance + as-needed", "Budesonide >400–800 µg/day"],
+            ["4", "High-dose ICS-formoterol + add-on LAMA (tiotropium); refer for T2 phenotyping", "Budesonide >800 µg/day"],
+            ["5", "Specialist-led: biologic therapy by phenotype (see below)", "—"]
           ]
         },
         {
@@ -53,7 +55,20 @@
           "rows": [
             ["Beclomethasone (Innovair®)", "100–200 µg/day", ">200–400", ">400"],
             ["Budesonide (Pulmicort®)", "200–400 µg/day", ">400–800", ">800"],
-            ["Fluticasone (Flixotide®)", "100–250 µg/day", ">250–500", ">500"]
+            ["Fluticasone propionate (Flixotide®)", "100–250 µg/day", ">250–500", ">500"],
+            ["Fluticasone furoate (Relvar Ellipta®)", "100 µg/day", "—", "200 µg/day"],
+            ["Mometasone furoate (Asmanex®)", "200 µg/day", "400", ">400"]
+          ]
+        },
+        {
+          "caption": "Biologic Therapy by Phenotype (Step 5)",
+          "headers": ["Biologic", "Target", "Key criteria"],
+          "rows": [
+            ["Omalizumab (Xolair®)", "Anti-IgE", "Allergic asthma, elevated total IgE, positive allergy tests"],
+            ["Mepolizumab (Nucala®)", "Anti-IL-5", "Eosinophilic: blood eos ≥300/µL, ≥2 exacerbations/year"],
+            ["Benralizumab (Fasenra®)", "Anti-IL-5Rα", "Eosinophilic: blood eos ≥300/µL, rapid eosinophil depletion"],
+            ["Dupilumab (Dupixent®)", "Anti-IL-4Rα", "T2-high: eos ≥150/µL OR FeNO ≥25 ppb; also for comorbid CRSwNP/eczema"],
+            ["Tezepelumab (Tezspire®)", "Anti-TSLP", "Severe asthma across phenotypes (T2-high and T2-low)"]
           ]
         }
       ]
@@ -63,11 +78,13 @@
       "title": "3b. Asthma Control Assessment",
       "type": "checklist",
       "items": [
-        { "id": "c1", "text": "Symptoms ≤2×/week → well controlled" },
-        { "id": "c2", "text": "No night symptoms" },
+        { "id": "c1", "text": "Daytime symptoms ≤2×/week → well controlled" },
+        { "id": "c2", "text": "No night waking due to asthma" },
         { "id": "c3", "text": "No activity limitation" },
-        { "id": "c4", "text": "Reliever ≤2×/week" },
-        { "id": "c5", "text": "Well controlled 6–12 months → consider step-down" }
+        { "id": "c4", "text": "Reliever use ≤2×/week (SABA or as-needed ICS-formoterol)" },
+        { "id": "c5", "text": "ACT score: ≥20 well controlled, 16–19 partly, ≤15 uncontrolled" },
+        { "id": "c6", "text": "Well controlled ≥3 months → consider step-down: reduce ICS dose by 25–50%" },
+        { "id": "c7", "text": "Risk factors for exacerbation: high SABA use, poor adherence, no ICS, low FEV₁, smoking, eosinophilia, obesity" }
       ]
     },
     {
@@ -81,10 +98,11 @@
         { "id": "d4", "text": "Respiratory infections and sick days last season" },
         { "id": "d5", "text": "EILO screening: laryngeal symptoms at rest/exercise/after (Newcastle questionnaire)" },
         { "id": "d6", "text": "Breathing devices: WellO₂, Sarvikuono, Airtrim, Lungplus" },
-        { "id": "d7", "text": "Consider EVH test or mannitol test (eucapnic voluntary hyperventilation)" },
-        { "id": "d8", "text": "Exercise challenge: treadmill or field test with symptom assessment" },
+        { "id": "d7", "text": "Consider EVH test or mannitol test (eucapnic voluntary hyperventilation); higher specificity for athletes" },
+        { "id": "d8", "text": "Exercise challenge: treadmill or field test with serial spirometry" },
         { "id": "d9", "text": "Reflux symptoms: burning, belching, acid taste (common in athlete cough)" },
-        { "id": "d10", "text": "Return-to-sport: symptom-free, medication optimized, PEF stable" }
+        { "id": "d10", "text": "Vocal cord dysfunction / ILO: consider CLE (continuous laryngoscopy during exercise) if EILO suspected" },
+        { "id": "d11", "text": "Return-to-sport: symptom-free, medication optimized, PEF stable, anti-doping check (TUE if needed)" }
       ]
     },
     {
@@ -92,11 +110,12 @@
       "title": "5. Exacerbation Management",
       "type": "checklist",
       "items": [
-        { "id": "e1", "text": "Prednisolone 20–40 mg/day for 5–7 days" },
-        { "id": "e2", "text": "Increase reliever medication" },
-        { "id": "e3", "text": "Check inhaler technique" },
-        { "id": "e4", "text": "Assess adherence" },
-        { "id": "e5", "text": "Follow-up visit in 2–4 weeks" }
+        { "id": "e1", "text": "Prednisolone 20–40 mg/day for 5–7 days (no taper needed for short courses)" },
+        { "id": "e2", "text": "Increase reliever: SABA 4–10 puffs q20min first hour, or ICS-formoterol as needed up to 72 µg/day formoterol" },
+        { "id": "e3", "text": "Check and correct inhaler technique" },
+        { "id": "e4", "text": "Assess and address adherence barriers" },
+        { "id": "e5", "text": "Identify and manage triggers (infection, allergen, NSAID, beta-blocker)" },
+        { "id": "e6", "text": "Follow-up visit in 2–4 weeks; step-up maintenance if ≥2 exacerbations/year" }
       ]
     },
     {
@@ -104,11 +123,12 @@
       "title": "6. Patient Education",
       "type": "checklist",
       "items": [
-        { "id": "f1", "text": "Inhaler technique taught and checked" },
-        { "id": "f2", "text": "Self-monitoring instructions (PEF, symptom diary)" },
-        { "id": "f3", "text": "Exacerbation action plan (when to seek care)" },
+        { "id": "f1", "text": "Inhaler technique: teach, demonstrate, check — repeat at every visit" },
+        { "id": "f2", "text": "Self-monitoring instructions (PEF diary, symptom diary, ACT questionnaire)" },
+        { "id": "f3", "text": "Written asthma action plan (green/yellow/red zones — when to step up, when to seek care)" },
         { "id": "f4", "text": "Medication reimbursement (Kela B-statement for asthma drugs)" },
-        { "id": "f5", "text": "Follow-up appointment booked" }
+        { "id": "f5", "text": "Comorbidity management: allergic rhinitis (treat the unified airway), reflux, obesity" },
+        { "id": "f6", "text": "Follow-up appointment booked (3 months after starting/changing treatment, then annually if stable)" }
       ]
     }
   ]
